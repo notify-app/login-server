@@ -1,0 +1,16 @@
+{
+  "name": "login-server",
+  "version": "0.1.0",
+  "description": "An example of a login server used with notify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luca Tabone <taboneluca3@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "hat": "0.0.3",
+    "request": "^2.79.0"
+  }
+}
