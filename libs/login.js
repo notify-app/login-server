@@ -1,12 +1,11 @@
 'use strict'
 
 const request = require('request')
-const hat = require('hat')
 const TOKEN = 'abc123'
 
 const users = {
   'tabone': 0,
-  'lorenzo': 25,
+  'joseph': 21,
 }
 
 module.exports = (req, res) => {
@@ -76,7 +75,7 @@ function createNotifyUser (internalID) {
     data: {
       type: 'users',
       attributes: {
-        username: 'test',
+        username: 'testone',
         internalID: internalID,
         bot: false
       }
@@ -113,7 +112,6 @@ function createToken (user) {
     data: {
       type: 'tokens',
       attributes: {
-        token: hat(),
         created: new Date(),
         origin: 'http://localhost:4200'
       },
